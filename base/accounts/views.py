@@ -14,3 +14,4 @@ class UserRegistration(APIView):
             serializer.save()
             return Response({'msg': 'Registration Successful'}, status=status.HTTP_201_CREATED)
         return Response(serializer.errors)
+#test cooment
