@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from rest_framework.views import APIView
 from .serializers import UserRegisterSerializer
 from rest_framework.response import Response
@@ -14,6 +13,6 @@ class UserRegistration(APIView):
             serializer.save()
             return Response({'msg': 'Registration Successful'}, status=status.HTTP_201_CREATED)
         return Response(serializer.errors)
-#test cooment
+# test comment
 
 # another change
